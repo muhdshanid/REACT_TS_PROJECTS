@@ -3,6 +3,9 @@ import { Navbar } from "./components/navbar/Navbar"
 import { SelectedPage } from "./shared/types"
 import Home from "./components/home/Home"
 import Benefits from "./components/benefits/Benefits"
+import OurClasses from "./components/ourClasses/OurClasses"
+import ContactUs from "./components/contactUs/ContactUs"
+import Footer from "./components/footer/Footer"
 
 function App() {
 
@@ -24,6 +27,9 @@ function App() {
       <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
+      <OurClasses setSelectedPage={setSelectedPage}/>
+      <ContactUs setSelectedPage={setSelectedPage}/>
+      <Footer/>
     </div>
   )
 }
